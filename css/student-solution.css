@@ -105,3 +105,27 @@
     }
 }
 
+/* EXERCISE 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: move-1 1s linear alternate 2;
+}
+@keyframes move-1{
+    from{
+        left:10%;
+    }
+    to{
+        left: calc(100% - 60px)
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-2 1s linear alternate 2;
+}
+@keyframes move-2{
+    from{
+        right:20%;
+    }
+    to{
+        right: calc(100% - 60px)
+    }
+}
+
