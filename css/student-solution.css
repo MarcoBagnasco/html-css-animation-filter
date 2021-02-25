@@ -88,3 +88,20 @@
         transform: rotate(-360deg);
     }
 }
+
+/* EXERCISE 11 */
+.ex-11-icon:hover{
+    animation: semi-rotation 2s linear;
+}
+@keyframes semi-rotation{
+    from{
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(315deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+
