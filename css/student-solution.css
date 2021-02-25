@@ -111,7 +111,7 @@
 }
 @keyframes move-1{
     from{
-        left:10%;
+        left: 10%;
     }
     to{
         left: calc(100% - 60px)
@@ -122,10 +122,70 @@
 }
 @keyframes move-2{
     from{
-        right:20%;
+        right: 20%;
     }
     to{
         right: calc(100% - 60px)
+    }
+}
+
+/* EXERCISE 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation: loop-1 2s linear;
+}
+@keyframes loop-1{
+    from{
+        left: 10%;
+        top: -10px;
+    }
+    30%{
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45%{
+        left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+    70%{
+        left: calc(0% - 3px);
+        top: calc(100% - 10px);
+    }
+    85%{
+        left: calc(0% - 3px);
+        top: -10px;
+    }
+    to{
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: loop-2 2s linear;
+}
+@keyframes loop-2{
+    from{
+        right: 20%;
+        bottom: -10px;
+    }
+    30%{
+        right: calc(100% - 40px);
+        bottom: -10px;
+    }
+    45%{
+        right: calc(100% - 40px);
+        bottom: calc(100% - 10px);
+    }
+    70%{
+        right: calc(0% - 3px);
+        bottom: calc(100% - 10px);
+    }
+    85%{
+        right: calc(0% - 3px);
+        bottom: -10px;
+    }
+    to{
+        right: 20%;
+        bottom: -10px;
     }
 }
 
