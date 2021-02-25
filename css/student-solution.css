@@ -75,3 +75,16 @@
     border-radius: 25px;
     filter: grayscale(.6) sepia(.5);
 }
+
+/* EXERCISE 10 */
+.ex-10-icon{
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
